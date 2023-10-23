@@ -18,7 +18,7 @@ function About(){
     <>
     <section className='about' id="about">  
       <section className="about-img">
-        <img src="/src/assets/lillyohr-headshot.jpg" alt="Lilly Ohr Headshot" />
+        <img src="https://github.com/ljohr/personalWebsite/blob/main/src/assets/lillyohr-headshot.jpg" alt="Lilly Ohr Headshot" />
         <p className="small-text">/lɪli oʊɹ/</p>
         <section className="about-icons">
           <a href="https://www.linkedin.com/in/lillyohr/" target="_blank"><FontAwesomeIcon icon={ faLinkedin } /></a>
