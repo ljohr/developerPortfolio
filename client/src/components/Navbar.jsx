@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
+import favicon from "../assets/favicon.ico";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -19,7 +20,9 @@ const Navbar = () => {
     <nav className={isOpen ? "mobile-navbar" : "main-navbar"}>
       <div className="nav-toggle-menu">
         <h2 className="name-title">
-          <a href="/">Lilly Ohr</a>
+          <a href="/">
+            <img src={favicon} alt="Lilly Ohr" />
+          </a>
         </h2>
         <HamburgerMenu isOpen={isOpen} toggleMenu={toggleMenu} />
       </div>

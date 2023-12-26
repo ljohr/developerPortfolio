@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: space-between;
   line-height: 0;
-  margin-bottom: 0.5rem;
   font-size: 1.1rem;
   max-width: 65rem;
   padding: 2rem;
@@ -17,9 +16,9 @@
   margin: 0;
 }
 
-.main-navbar .name-title a {
+.main-navbar .name-title a img {
   margin: 0;
-  font-size: 1.6rem;
+  max-width: 2.1rem;
 }
 
 .main-navbar a {

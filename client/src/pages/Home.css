@@ -7,6 +7,7 @@
   display: flex;
   padding: 2rem;
   min-height: 38rem;
+  margin-top: -1.5rem;
 }
 
 #projects {
@@ -31,6 +32,14 @@
 
 #skills {
   padding: 2rem;
+}
+
+#hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .title {
@@ -255,7 +264,17 @@
 }
 
 @media screen and (max-width: 525px) {
+  .title {
+    font-size: 5rem;
+  }
+
   .project-header {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .title {
+    font-size: 4rem;
   }
 }
