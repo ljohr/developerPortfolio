@@ -1,7 +1,7 @@
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSeedling } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faAngleUp, faSeedling } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./Home.css";
 import { Link } from "react-router-dom";
 
@@ -12,6 +12,7 @@ const Home = () => {
       <Projects />
       <Skills />
       <About />
+      <ScrollUpBtn />
     </main>
   );
 };
@@ -317,6 +318,41 @@ const About = () => {
         </p>
       </div>
     </section>
+  );
+};
+
+const ScrollUpBtn = () => {
+  const [visible, setVisible] = useState(false);
+
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 20) setVisible(true);
+    else setVisible(false);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisible);
+
+    return () => {
+      window.removeEventListener("scroll", toggleVisible);
+    };
+  }, []);
+
+  return (
+    <button
+      onClick={scrollToTop}
+      style={{ display: visible ? "flex" : "none" }}
+      className="top"
+    >
+      <FontAwesomeIcon icon={faAngleUp} />
+    </button>
   );
 };
 
