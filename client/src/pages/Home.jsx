@@ -20,14 +20,10 @@ const Hero = () => {
   return (
     <section id="hero">
       <div className="container">
-        <h1 className="title">Full Stack Web Developer</h1>
-        <h3 className="title" id="location">
-          Based in Boston
-        </h3>
-        <p>
-          Hi, I’m Lilly Ohr — a full stack web developer studying Computer
-          Science and Linguistics at Boston College.
-        </p>
+        <h1 className="title" data-text="Lilly Ohr">
+          Lilly Ohr
+        </h1>
+        <h3>Full Stack Developer Based in Boston</h3>
         <div className="hero-links">
           <a href="https://github.com/ljohr" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faGithub} />
