@@ -21,6 +21,11 @@
   max-width: 2rem;
 }
 
+.mobile-navbar .name-title a img {
+  margin: 0;
+  max-width: 2.3rem;
+}
+
 .main-navbar a {
   font-style: normal;
   margin: 0 0.5rem;
@@ -97,15 +102,6 @@
 }
 .hamburger.is-active:after {
   transform: translate(0rem, -0.45rem) rotate(-45deg);
-}
-
-@media screen and (max-width: 600px) {
-  .name-title {
-    font-size: 1.6rem;
-  }
-  .navbar-nav {
-    font-size: 0.9rem;
-  }
 }
 
 @media screen and (max-width: 525px) {

@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp, faSeedling } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import "./Home.css";
 import { Link } from "react-router-dom";
+import "./Home.css";
 
 const Home = () => {
   return (
@@ -170,9 +170,7 @@ const Projects = () => {
                 </div>
               </div>
               <p className="project-desc">
-                This is a website created with the purpose of connecting low
-                resource high school students with undergraduate college
-                students acting as mentors.
+                Scope was created to provide an accessible and
               </p>
               <div className="project-langs">
                 <ul>

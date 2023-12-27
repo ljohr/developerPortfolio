@@ -53,6 +53,14 @@ const Navbar = () => {
         </li>
         <li className="nav-item">
           <Link
+            to="/blog"
+            onClick={(e) => handleLinkClick(e, toggleMenu, isOpen)}
+          >
+            <span className="link-text">Blog</span>
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link
             to="/#resume"
             onClick={(e) => handleLinkClick(e, toggleMenu, isOpen)}
           >
