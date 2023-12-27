@@ -26,6 +26,15 @@ app.use(
   })
 );
 
+app.get("/api/blog-home", async (req, res, next) => {
+  try {
+    const posts = await PostModel.find().limit(12);
+    res.json({ posts });
+  } catch (error) {
+    next(error);
+  }
+});
+
 app.get("/api/blog/:title", async (req, res, next) => {
   try {
     let post = await PostModel.find({ slug: req.params.title });
