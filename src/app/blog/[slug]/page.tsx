@@ -1,0 +1,43 @@
+import { allDocs } from "contentlayer/generated";
+import { notFound } from "next/navigation";
+import Mdx from "@/app/components/Mdx";
+import { useMDXComponent } from "next-contentlayer/hooks";
+import MDXComponents from "@/app/components/Mdx";
+import Navbar from "@/app/components/Navbar";
+import BlogSidebar from "@/app/components/BlogSidebar";
+import "./BlogContainer.css";
+
+interface PageProps {
+  params: {
+    slug: string;
+  };
+}
+
+const getDocFromParams = async (slug: string) => {
+  const article = allDocs.find((doc) => doc.slugAsParams === slug);
+
+  if (!article) {
+    notFound();
+  }
+
+  return article;
+};
+
+const page = async ({ params }: PageProps) => {
+  const article = await getDocFromParams(params.slug);
+
+  return (
+    <>
+      <Navbar />
+      <div className="container blogContainer">
+        <BlogSidebar />
+        <article className="blogPost">
+          <h1>{article.title}</h1>
+          <Mdx code={article.body.code} />
+        </article>
+      </div>
+    </>
+  );
+};
+
+export default page;
