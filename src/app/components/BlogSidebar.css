@@ -1,0 +1,13 @@
+.sidebar li {
+  margin: 0;
+  list-style: none;
+  line-height: 1.8rem;
+}
+
+.sidebar li a {
+  color: rgb(94, 95, 96);
+}
+
+.sidebar li.blog-topic {
+  font-style: italic;
+}

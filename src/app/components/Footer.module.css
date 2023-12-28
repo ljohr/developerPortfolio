@@ -1,0 +1,24 @@
+.footerMain {
+  margin-top: auto;
+  font-weight: 600;
+  padding: 1.2rem 2rem;
+}
+
+.footerContainer {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  max-width: 58rem;
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.footerLinks a {
+  width: 1.3rem;
+}

@@ -1,95 +1,366 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleUp, faSeedling } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
-export default function Home() {
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
+import styles from "./page.module.css";
+
+import htmlImg from "../assets/skills-img/html.png";
+import cssImg from "../assets/skills-img/css.png";
+import jsImg from "../assets/skills-img/js.png";
+import pythonImg from "../assets/skills-img/python.png";
+import cImg from "../assets/skills-img/c.png";
+import javaImg from "../assets/skills-img/java.png";
+import nodeImg from "../assets/skills-img/nodejs.png";
+import mongodbImg from "../assets/skills-img/mongodb.svg";
+import mysqlImg from "../assets/skills-img/mysql.svg";
+import gitImg from "../assets/skills-img/git.svg";
+import firebaseImg from "../assets/skills-img/firebase.svg";
+import viteImg from "../assets/skills-img/vite.svg";
+import reactImg from "../assets/skills-img/react.svg";
+import expressImg from "../assets/skills-img/express.svg";
+
+import scopeapp from "../assets/projects/scope-app.png";
+import gradconnect from "../assets/projects/gradconnect.png";
+import eagleconnect from "../assets/projects/eagleconnect.png";
+
+const Hero = () => {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
+    <section className={styles.hero}>
+      <div className={styles.container}>
+        <h1 className={styles.title} data-text="Lilly Ohr">
+          Lilly Ohr
+        </h1>
+        <h3>Full Stack Developer Based in Boston</h3>
+        <div className={styles.links}>
+          <a href="https://github.com/ljohr" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faGithub} className={styles.faIcon} />
+          </a>
           <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="https://www.linkedin.com/in/lillyohr/"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noreferrer"
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
+            <FontAwesomeIcon icon={faLinkedin} className={styles.faIcon} />
           </a>
         </div>
       </div>
+    </section>
+  );
+};
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+const Skills = () => {
+  return (
+    <section className={styles.skills}>
+      <div className="container">
+        <h2 className={styles.titleH2}>Skills</h2>
+        <div className={styles.skillsGroup}>
+          <div>
+            <h3>Programming Languages</h3>
+            <div className={styles.iconsContainer}>
+              <div className={styles.skillsIcon}>
+                <Image src={htmlImg} alt="html" height={50} width={50} />
+                <p>HTML</p>
+              </div>
+              <div className={styles.skillsIcon}>
+                <Image src={cssImg} alt="css" height={50} width={50} />
+                <p>CSS</p>
+              </div>
+              <div className={styles.skillsIcon}>
+                <Image src={jsImg} alt="javascript" height={50} width={50} />
+                <p>JavaScript</p>
+              </div>
+              <div className={styles.skillsIcon}>
+                <Image src={pythonImg} alt="python" height={50} width={50} />
+                <p>Python</p>
+              </div>
+              <div className={styles.skillsIcon}>
+                <Image src={cImg} alt="c" height={50} width={50} />
+                <p>C</p>
+              </div>
+              <div className={styles.skillsIcon}>
+                <Image src={javaImg} alt="java" height={50} width={50} />
+                <p>Java</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3>Technologies</h3>
+            <div className={styles.iconsContainer}>
+              <div className={styles.skillsIcon}>
+                <Image src={nodeImg} alt="node-js" height={50} width={50} />
+                <p>Node.js</p>
+              </div>
+              <div className={styles.skillsIcon}>
+                <Image src={mongodbImg} alt="mongodb" height={50} width={50} />
+                <p>MongoDB</p>
+              </div>
+              <div className={styles.skillsIcon}>
+                <Image src={mysqlImg} alt="mysql" height={50} width={50} />
+                <p>MySQL</p>
+              </div>
+              <div className={styles.skillsIcon}>
+                <Image src={gitImg} alt="git" height={50} width={50} />
+                <p>Git</p>
+              </div>
+              <div className={styles.skillsIcon}>
+                <Image
+                  src={firebaseImg}
+                  alt="firebase"
+                  height={50}
+                  width={50}
+                />
+                <p>Firebase</p>
+              </div>
+              <div className={styles.skillsIcon}>
+                <Image src={viteImg} alt="vite" height={50} width={50} />
+                <p>Vite</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3>Frameworks</h3>
+            <div className={styles.iconsContainer}>
+              <div className={styles.skillsIcon}>
+                <Image src={reactImg} alt="react" height={50} width={50} />
+                <p>React</p>
+              </div>
+              <div className={styles.skillsIcon}>
+                <Image
+                  src={expressImg}
+                  alt="express-js"
+                  height={50}
+                  width={50}
+                />
+                <p>Express.js</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
+  );
+};
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+const Projects = () => {
+  return (
+    <section className={styles.projects}>
+      <div className="container">
+        <h2 className={styles.titleH2}>Projects</h2>
+        <div className={styles.projectsGroup}>
+          <div className={styles.projectsCard}>
+            <div className={`${styles.left} ${styles.imgCard}`}>
+              <Image
+                className={styles.projectImg}
+                src={scopeapp}
+                alt="scope"
+                height={204}
+                width={374}
+              />
+            </div>
+            <div className={styles.right}>
+              <div className={styles.projectHeader}>
+                <h3>Scope</h3>
+                <div className={styles.projectLinks}>
+                  <a
+                    className={styles.projectSingleLink}
+                    href="https://github.com/ljohr/scope"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Github
+                    <FontAwesomeIcon icon={faGithub} className={styles.faGit} />
+                  </a>
+                  <a
+                    className={styles.projectSingleLink}
+                    href="https://scopeapp.onrender.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    See Live
+                    <FontAwesomeIcon
+                      icon={faSeedling}
+                      className={styles.faSeedling}
+                    />
+                  </a>
+                </div>
+              </div>
+              <p className={styles.projectDesc}>
+                Scope was created to provide an accessible and
+              </p>
+              <div className={styles.projectLangs}>
+                <ul>
+                  <li>HTML / CSS</li>
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>MongoDB</li>
+                  <li>Firebase Auth</li>
+                  <li>Mongoose</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className={styles.projectsCard}>
+            <div className={styles.left}>
+              <div className={styles.projectHeader}>
+                <h3>Grad Connect</h3>
+                <div className={styles.projectLinks}>
+                  <a
+                    className={styles.projectSingleLink}
+                    href="https://github.com/fordesa/HackTheHeights"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Github{" "}
+                    <FontAwesomeIcon icon={faGithub} className={styles.faGit} />
+                  </a>
+                  <a
+                    className={styles.projectSingleLink}
+                    href="https://gradconnect.onrender.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    See Live
+                    <FontAwesomeIcon
+                      icon={faSeedling}
+                      className={styles.faSeedling}
+                    />
+                  </a>
+                </div>
+              </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+              <p className={styles.projectDesc}>
+                This is a website created with the purpose of connecting low
+                resource high school students with undergraduate college
+                students acting as mentors.
+              </p>
+              <p className={styles.moreInfo}>
+                Winner of the Grand Prize and Best Use of Auth0 Prize at the
+                2023 Boston College Hackathon.
+              </p>
+              <div className={styles.projectLangs}>
+                <ul>
+                  <li>HTML / CSS</li>
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>MongoDB</li>
+                  <li>Auth0</li>
+                  <li>Mongoose</li>
+                </ul>
+              </div>
+            </div>
+            <div className="right img-card">
+              <Image
+                className="project-img"
+                src={gradconnect}
+                alt="Grad Connect"
+                height={204}
+                width={374}
+              />
+            </div>
+          </div>
+          <div className={styles.projectsCard}>
+            <div className={styles.left}>
+              <Image
+                className="project-img img-card"
+                src={eagleconnect}
+                alt="Eagle Connect"
+                height={204}
+                width={374}
+              />
+            </div>
+            <div className={styles.right}>
+              <div className={styles.projectHeader}>
+                <h3>Eagle Connect</h3>
+                <div className={styles.projectLinks}>
+                  <a
+                    className={styles.projectSingleLink}
+                    href="https://github.com/ljohr/eagle-connect"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Github
+                    <FontAwesomeIcon icon={faGithub} className={styles.faGit} />
+                  </a>
+                  <a
+                    className={styles.projectSingleLink}
+                    href="https://eagleconnect.onrender.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    See Live
+                    <FontAwesomeIcon
+                      icon={faSeedling}
+                      className={styles.faSeedling}
+                    />
+                  </a>
+                </div>
+              </div>
+              <p className={styles.projectDesc}>
+                This is a website created with the purpose of connecting low
+                resource high school students with undergraduate college
+                students acting as mentors.
+              </p>
+              <div className={styles.projectLangs}>
+                <ul>
+                  <li>HTML / CSS</li>
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>MongoDB</li>
+                  <li>Firebase Auth</li>
+                  <li>Mongoose</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
+  );
+};
+
+const About = () => {
+  return (
+    <section className={styles.about}>
+      <div className="container">
+        <h2 className={styles.titleH2}>About</h2>
+        <p>
+          Hi, Lilly Ohr, a I’m full stack web developer studying Computer
+          Science and Linguistics at Boston College. I’m passionate about
+          building engaging, accessible, and robust web applications that solve
+          user problems.
+        </p>
+        <p>
+          I’ve recently been working on Scope, a web app made to streamline and
+          simplify access to course evaluations at Boston College. I’ve also
+          been working as a TA at BC’s Computer Science Department for over a
+          year and have had the opportunity to co-found the Boston College
+          Linguistics Club, where I currently serve as president.
+        </p>
+        <p>
+          When I’m not programming, I like to spend my time playing guitar,
+          reading, and drinking coffee.
+        </p>
+      </div>
+    </section>
+  );
+};
+
+const Home = () => {
+  return (
+    <main className={styles.loadAnimation}>
+      <Navbar />
+      <Hero />
+      <Projects />
+      <Skills />
+      <About />
+      <Footer />
     </main>
-  )
-}
+  );
+};
+
+export default Home;
