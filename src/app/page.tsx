@@ -55,7 +55,7 @@ const Hero = () => {
 
 const Skills = () => {
   return (
-    <section className={styles.skills}>
+    <section id="skills" className={styles.skills}>
       <div className="container">
         <h2 className={styles.titleH2}>Skills</h2>
         <div className={styles.skillsGroup}>
@@ -148,7 +148,7 @@ const Skills = () => {
 
 const Projects = () => {
   return (
-    <section className={styles.projects}>
+    <section id="projects" className={styles.projects}>
       <div className="container">
         <h2 className={styles.titleH2}>Projects</h2>
         <div className={styles.projectsGroup}>
@@ -325,7 +325,7 @@ const Projects = () => {
 
 const About = () => {
   return (
-    <section className={styles.about}>
+    <section id="about" className={styles.about}>
       <div className="container">
         <h2 className={styles.titleH2}>About</h2>
         <p>

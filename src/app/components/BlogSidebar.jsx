@@ -1,36 +1,39 @@
 import Link from "next/link";
-import "./BlogSidebar.css";
+import styles from "./BlogSidebar.module.css";
 
 const BlogSidebar = () => {
   return (
-    <aside className="sidebar">
+    <aside className={styles.sidebar}>
       <ul>
+        <li>
+          <Link href="/">Home</Link>
+        </li>
         <li>
           <Link href="/blog">Blog Home</Link>
         </li>
         <li>
-          <Link>All Topics</Link>
+          <Link href="/blog">All Topics</Link>
         </li>
-        <li className="blog-topic">
-          <Link>References</Link>
+        <li className={styles.blogTopic}>
+          <Link href="/blog">References</Link>
         </li>
-        <li className="blog-topic">
-          <Link>Dev Logs</Link>
+        <li className={styles.blogTopic}>
+          <Link href="/blog">Dev Logs</Link>
         </li>
-        <li className="blog-topic">
-          <Link>Reflections</Link>
+        <li className={styles.blogTopic}>
+          <Link href="/blog">Reflections</Link>
         </li>
-        <li className="blog-topic">
-          <Link>Other</Link>
+        <li className={styles.blogTopic}>
+          <Link href="/blog">Other</Link>
         </li>
         <li>
-          <Link>All Languages</Link>
+          <Link href="/blog">All Languages</Link>
         </li>
-        <li className="blog-topic">
-          <Link>JavaScript</Link>
+        <li className={styles.blogTopic}>
+          <Link href="/blog">JavaScript</Link>
         </li>
-        <li className="blog-topic">
-          <Link>Python</Link>
+        <li className={styles.blogTopic}>
+          <Link href="/blog">Python</Link>
         </li>
       </ul>
     </aside>

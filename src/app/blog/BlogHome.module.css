@@ -1,0 +1,36 @@
+/* .blogHome {
+  font-family: "Playfair Display", serif;
+} */
+
+.blogTitle {
+  text-align: center;
+  padding: 2.5rem 0;
+  margin-bottom: 2rem;
+  background-color: aliceblue;
+}
+
+.blogHome h1 {
+  /* font-style: italic; */
+  /* font-size: 2.2rem; */
+  margin: 0;
+}
+
+.blogHome h3 {
+  margin-top: 0;
+}
+
+.blogHome .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.blogHome .single-post:first-child {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  grid-column: 1 / -1;
+}
+
+/* .blog-home .single-post .post-desc {
+  padding: 0 2rem;
+} */
