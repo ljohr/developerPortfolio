@@ -37,8 +37,12 @@ const BlogContent = () => {
 const BlogHome = () => {
   return (
     <>
-      <Navbar />
-      <BlogContent />
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <BlogContent />
+      </main>
       <Footer />
     </>
   );

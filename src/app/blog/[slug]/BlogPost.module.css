@@ -1,7 +1,7 @@
 .blogContainer {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  gap: 4.5rem;
+  gap: 3rem;
 }
 
 .blogContainer h1 {

@@ -27,14 +27,18 @@ const page = async ({ params }: PageProps) => {
 
   return (
     <>
-      <Navbar />
-      <div className={`container ${styles.blogContainer}`}>
-        <BlogSidebar />
-        <article className={styles.blogPost}>
-          <h1>{article.title}</h1>
-          <Mdx code={article.body.code} />
-        </article>
-      </div>
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <div className={`container ${styles.blogContainer}`}>
+          <BlogSidebar />
+          <article className={styles.blogPost}>
+            <h1>{article.title}</h1>
+            <Mdx code={article.body.code} />
+          </article>
+        </div>
+      </main>
       <Footer />
     </>
   );

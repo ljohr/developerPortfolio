@@ -352,14 +352,18 @@ const About = () => {
 
 const Home = () => {
   return (
-    <main className={styles.loadAnimation}>
-      <Navbar />
-      <Hero />
-      <Projects />
-      <Skills />
-      <About />
-      <Footer />
-    </main>
+    <>
+      <header>
+        <Navbar />
+      </header>
+      <main className={styles.loadAnimation}>
+        <Hero />
+        <Projects />
+        <Skills />
+        <About />
+        <Footer />
+      </main>
+    </>
   );
 };
 
