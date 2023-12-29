@@ -1,13 +1,12 @@
 import Link from "next/link";
 import styles from "./BlogSidebar.module.css";
 
+import { playfair } from "../utils/fonts";
+
 const BlogSidebar = () => {
   return (
-    <aside className={styles.sidebar}>
+    <aside className={`${playfair.className} ${styles.sidebar}`}>
       <ul>
-        <li>
-          <Link href="/">Home</Link>
-        </li>
         <li>
           <Link href="/blog">Blog Home</Link>
         </li>

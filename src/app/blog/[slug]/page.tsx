@@ -1,11 +1,9 @@
 import { allDocs } from "contentlayer/generated";
 import { notFound } from "next/navigation";
 import Mdx from "@/app/components/Mdx";
-import { useMDXComponent } from "next-contentlayer/hooks";
-import MDXComponents from "@/app/components/Mdx";
 import Navbar from "@/app/components/Navbar";
 import BlogSidebar from "@/app/components/BlogSidebar";
-import "./BlogContainer.css";
+import styles from "./BlogPost.module.css";
 
 interface PageProps {
   params: {
@@ -29,7 +27,7 @@ const page = async ({ params }: PageProps) => {
   return (
     <>
       <Navbar />
-      <div className="container blogContainer">
+      <div className={`container ${styles.blogContainer}`}>
         <BlogSidebar />
         <article className="blogPost">
           <h1>{article.title}</h1>

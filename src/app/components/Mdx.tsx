@@ -1,5 +1,6 @@
 import { useMDXComponent } from "next-contentlayer/hooks";
 import Image from "next/image";
+import { playfair } from "../utils/fonts";
 
 type CustomHeadingProps = React.HTMLAttributes<HTMLHeadingElement>;
 
@@ -11,7 +12,7 @@ const components = {
   h5: (props: CustomHeadingProps) => <h5 className="blogH5" {...props} />,
   h6: (props: CustomHeadingProps) => <h6 className="blogH6" {...props} />,
   p: (props: React.HTMLAttributes<HTMLParagraphElement>) => (
-    <p className="blogP" {...props} />
+    <p className={playfair.className} {...props} />
   ),
   Image,
 };

@@ -1,7 +1,3 @@
-/* .blogHome {
-  font-family: "Playfair Display", serif;
-} */
-
 .blogTitle {
   text-align: center;
   padding: 2.5rem 0;
@@ -10,27 +6,49 @@
 }
 
 .blogHome h1 {
-  /* font-style: italic; */
-  /* font-size: 2.2rem; */
+  font-style: italic;
+  font-size: 2.2rem;
   margin: 0;
 }
 
-.blogHome h3 {
+.blogHome h4 {
   margin-top: 0;
 }
 
-.blogHome .container {
+.blogContainer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: 1fr 4fr;
+  gap: 4.5rem;
 }
 
-.blogHome .single-post:first-child {
-  display: grid;
-  grid-template-columns: 1.5fr 2fr;
-  grid-column: 1 / -1;
+.blogContainer h2 {
+  font-size: 2.2rem;
 }
 
-/* .blog-home .single-post .post-desc {
-  padding: 0 2rem;
-} */
+.blogContainer a {
+  color: #4a4a4a;
+}
+
+.blogContainer a:hover {
+  color: #000000;
+}
+
+.blogContainer p {
+  color: #111111;
+}
+
+.blogPost:first-child {
+  padding-top: 0;
+}
+
+.blogPost {
+  padding: 2rem 0;
+  border-bottom: 0.5px solid rgb(145, 145, 145);
+}
+
+.postDate {
+  font-size: 0.9rem;
+  color: rgb(214, 29, 29);
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+}

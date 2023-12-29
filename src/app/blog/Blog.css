@@ -1,0 +1,24 @@
+.blogContainer h2 {
+  font-size: 2.2rem;
+}
+
+.blogContainer a {
+  color: #4a4a4a;
+}
+
+.blogContainer a:hover {
+  color: #000000;
+}
+
+.blogContainer p {
+  color: #111111;
+}
+
+.blogPost:first-child {
+  padding-top: 0;
+}
+
+.blogPost {
+  padding: 2rem 0;
+  border-bottom: 0.5px solid rgb(145, 145, 145);
+}

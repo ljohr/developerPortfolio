@@ -1,0 +1,27 @@
+.blogContainer {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 4.5rem;
+}
+
+.blogContainer h1 {
+  font-size: 3rem;
+}
+
+.blogContainer h2 {
+  font-size: 2.2rem;
+}
+
+.blogContainer a {
+  color: #4a4a4a;
+}
+
+.blogContainer a:hover {
+  color: #000000;
+}
+
+.blogContainer p {
+  font-size: 1.1rem;
+  letter-spacing: 0.02rem;
+  color: #111111;
+}
