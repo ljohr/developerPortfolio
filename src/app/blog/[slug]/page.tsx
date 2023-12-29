@@ -2,6 +2,7 @@ import { allDocs } from "contentlayer/generated";
 import { notFound } from "next/navigation";
 import Mdx from "@/app/components/Mdx";
 import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
 import BlogSidebar from "@/app/components/BlogSidebar";
 import styles from "./BlogPost.module.css";
 
@@ -29,11 +30,12 @@ const page = async ({ params }: PageProps) => {
       <Navbar />
       <div className={`container ${styles.blogContainer}`}>
         <BlogSidebar />
-        <article className="blogPost">
+        <article className={styles.blogPost}>
           <h1>{article.title}</h1>
           <Mdx code={article.body.code} />
         </article>
       </div>
+      <Footer />
     </>
   );
 };

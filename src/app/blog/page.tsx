@@ -4,6 +4,7 @@ import { formatDate } from "../utils/formatDate";
 import Link from "next/link";
 
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import BlogSidebar from "../components/BlogSidebar";
 
 import styles from "./BlogHome.module.css";
@@ -38,6 +39,7 @@ const BlogHome = () => {
     <>
       <Navbar />
       <BlogContent />
+      <Footer />
     </>
   );
 };

@@ -6,6 +6,8 @@
 
 .blogContainer h1 {
   font-size: 3rem;
+  line-height: 3.4rem;
+  padding-bottom: 1rem;
 }
 
 .blogContainer h2 {
@@ -24,4 +26,15 @@
   font-size: 1.1rem;
   letter-spacing: 0.02rem;
   color: #111111;
+}
+
+@media screen and (max-width: 525px) {
+  .blogContainer {
+    grid-template-columns: 1fr;
+    gap: 4.5rem;
+  }
+
+  .blogPost h1 {
+    font-size: 2.2rem;
+  }
 }
