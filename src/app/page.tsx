@@ -190,7 +190,13 @@ const Projects = () => {
                 </div>
               </div>
               <p className={styles.projectDesc}>
-                Scope was created to provide an accessible and
+                Scope was created to provide an accessible course evaluations
+                platform for Boston College students.
+              </p>
+              <p>
+                17,000 course reviews were scraped using a Python script. Users
+                can add, update, and delete their own reviews as they search for
+                existing courses that fit their needs.
               </p>
               <div className={styles.projectLangs}>
                 <ul>
@@ -234,9 +240,8 @@ const Projects = () => {
               </div>
 
               <p className={styles.projectDesc}>
-                This is a website created with the purpose of connecting low
-                resource high school students with undergraduate college
-                students acting as mentors.
+                Grad Connect was created to connect low resource high school
+                students with undergraduate college students acting as mentors.
               </p>
               <p className={styles.moreInfo}>
                 Winner of the Grand Prize and Best Use of Auth0 Prize at the
@@ -253,9 +258,9 @@ const Projects = () => {
                 </ul>
               </div>
             </div>
-            <div className="right img-card">
+            <div className={styles.imgCard}>
               <Image
-                className="project-img"
+                className={styles.projectImg}
                 src={gradconnect}
                 alt="Grad Connect"
                 height={204}
@@ -266,7 +271,7 @@ const Projects = () => {
           <div className={styles.projectsCard}>
             <div className={styles.left}>
               <Image
-                className="project-img img-card"
+                className={styles.projectImg}
                 src={eagleconnect}
                 alt="Eagle Connect"
                 height={204}
@@ -301,9 +306,16 @@ const Projects = () => {
                 </div>
               </div>
               <p className={styles.projectDesc}>
-                This is a website created with the purpose of connecting low
-                resource high school students with undergraduate college
-                students acting as mentors.
+                Eagle Connect was created to connect undergraduate students at
+                Boston College with BC alumni. The platform allows mentors to
+                indicate what help they are willing to offer (general career,
+                resume review, interview help).
+              </p>
+              <p>
+                The MVP is currently live, and V1 is under development with the
+                aim of being launched by March 2024. Developed by a team of 3,
+                we aim to make this platform the leading networking solution for
+                all BC students by the end of the year.
               </p>
               <div className={styles.projectLangs}>
                 <ul>
