@@ -28,6 +28,11 @@
   color: #111111;
 }
 
+.blogContainer code {
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
 @media screen and (max-width: 525px) {
   .blogContainer {
     grid-template-columns: 1fr;

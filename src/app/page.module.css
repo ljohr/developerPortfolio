@@ -169,7 +169,8 @@
 }
 
 .projectImg {
-  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .projectLangs {
@@ -272,14 +273,14 @@
 }
 
 @media screen and (max-width: 768px) {
-  .img-card {
+  .imgCard {
     order: -1;
   }
-  .projects-card {
+  .projectsCard {
     grid-template-columns: 100%;
     padding: 3.4rem 2rem;
   }
-  .icons-container {
+  .iconsContainer {
     grid-template-columns: repeat(auto-fill, 33%);
   }
   .top {
@@ -299,7 +300,7 @@
     font-size: 5rem;
   }
 
-  .project-header {
+  .projectHeader {
     flex-direction: column;
   }
 }

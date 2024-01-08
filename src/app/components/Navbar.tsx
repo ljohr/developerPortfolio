@@ -1,14 +1,19 @@
 "use client";
-import { useState } from "react";
+
+import { FC, useState, MouseEvent } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import favicon from "../favicon.ico";
 import "./Navbar.css";
 
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+const Navbar: FC = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  const handleLinkClick = (event, toggle, isMenuOpen) => {
+  const handleLinkClick = (
+    event: MouseEvent<HTMLAnchorElement>,
+    toggle: () => void,
+    isMenuOpen: boolean
+  ) => {
     if (isMenuOpen) {
       toggle();
     }
@@ -53,14 +58,14 @@ const Navbar = () => {
             <span className="link-text">About</span>
           </Link>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <Link
             href="/blog"
             onClick={(e) => handleLinkClick(e, toggleMenu, isOpen)}
           >
             <span className="link-text">Blog</span>
           </Link>
-        </li>
+        </li> */}
         <li className="nav-item">
           <Link
             href="/#resume"
@@ -74,7 +79,12 @@ const Navbar = () => {
   );
 };
 
-function HamburgerMenu({ isOpen, toggleMenu }) {
+interface HamburgerMenuProps {
+  isOpen: boolean;
+  toggleMenu: () => void;
+}
+
+const HamburgerMenu: FC<HamburgerMenuProps> = ({ isOpen, toggleMenu }) => {
   return (
     <button
       onClick={toggleMenu}
@@ -83,6 +93,6 @@ function HamburgerMenu({ isOpen, toggleMenu }) {
       <div className="bars"></div>
     </button>
   );
-}
+};
 
 export default Navbar;
