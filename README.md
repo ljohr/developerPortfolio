@@ -45,7 +45,7 @@ npm run dev
 ```
 
 ## **Technologies Used**
-- HTML5
-- CSS3
+- HTML/CSS
+- React
 - TypeScript
 - Next.js
