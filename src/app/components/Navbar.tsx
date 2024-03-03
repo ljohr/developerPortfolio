@@ -52,10 +52,10 @@ const Navbar: FC = () => {
         </li>
         <li className="nav-item">
           <Link
-            href="/#about"
+            href="/#contact"
             onClick={(e) => handleLinkClick(e, toggleMenu, isOpen)}
           >
-            <span className="link-text">About</span>
+            <span className="link-text">Contact</span>
           </Link>
         </li>
         {/* <li className="nav-item">

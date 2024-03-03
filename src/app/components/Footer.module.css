@@ -1,7 +1,9 @@
 .footerMain {
-  margin-top: auto;
+  margin: 0 auto;
   font-weight: 600;
-  padding: 1.2rem 0;
+  padding: 2rem;
+  max-width: 54rem;
+  font-size: 0.8rem;
 }
 
 .footerContainer {
@@ -20,5 +22,5 @@
 }
 
 .footerLinks a {
-  width: 1.3rem;
+  width: 0.9rem;
 }

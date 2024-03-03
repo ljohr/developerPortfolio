@@ -31,7 +31,7 @@ import eagleconnect from "../assets/projects/eagleconnect.png";
 const Hero = () => {
   return (
     <section className={styles.hero}>
-      <div className={styles.container}>
+      <div className={styles.heroInner}>
         <h1 className={styles.title} data-text="Lilly Ohr">
           Lilly Ohr
         </h1>
@@ -150,20 +150,11 @@ const Skills = () => {
 const Projects = () => {
   return (
     <section id="projects" className={styles.projects}>
-      <div className="container">
+      <div className={styles.projectsInner}>
         <h2 className={styles.titleH2}>Projects</h2>
         <div className={styles.projectsGroup}>
           <div className={styles.projectsCard}>
-            <div className={`${styles.left} ${styles.imgCard}`}>
-              <Image
-                className={styles.projectImg}
-                src={scopeapp}
-                alt="scope"
-                height={204}
-                width={374}
-              />
-            </div>
-            <div className={styles.right}>
+            <div className={styles.projectInfo}>
               <div className={styles.projectHeader}>
                 <h3>Scope</h3>
                 <div className={styles.projectLinks}>
@@ -210,9 +201,18 @@ const Projects = () => {
                 </ul>
               </div>
             </div>
+            <div className={styles.imgCard}>
+              <Image
+                className={styles.projectImg}
+                src={scopeapp}
+                alt="scope"
+                height={204}
+                width={374}
+              />
+            </div>
           </div>
           <div className={styles.projectsCard}>
-            <div className={styles.left}>
+            <div className={styles.projectInfo}>
               <div className={styles.projectHeader}>
                 <h3>Grad Connect</h3>
                 <div className={styles.projectLinks}>
@@ -270,16 +270,7 @@ const Projects = () => {
             </div>
           </div>
           <div className={styles.projectsCard}>
-            <div className={styles.left}>
-              <Image
-                className={styles.projectImg}
-                src={eagleconnect}
-                alt="Eagle Connect"
-                height={204}
-                width={374}
-              />
-            </div>
-            <div className={styles.right}>
+            <div className={styles.projectInfo}>
               <div className={styles.projectHeader}>
                 <h3>Eagle Connect</h3>
                 <div className={styles.projectLinks}>
@@ -329,6 +320,15 @@ const Projects = () => {
                 </ul>
               </div>
             </div>
+            <div className={styles.imgCard}>
+              <Image
+                className={styles.projectImg}
+                src={eagleconnect}
+                alt="Eagle Connect"
+                height={204}
+                width={374}
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -336,28 +336,29 @@ const Projects = () => {
   );
 };
 
-const About = () => {
+const Contact = () => {
   return (
-    <section id="about" className={styles.about}>
-      <div className="container">
-        <h2 className={styles.titleH2}>About</h2>
-        <p>
-          Hi, Lilly Ohr, a I’m full stack web developer studying Computer
-          Science and Linguistics at Boston College. I’m passionate about
-          building engaging, accessible, and robust web applications that solve
-          user problems.
-        </p>
-        <p>
-          I’ve recently been working on Scope, a web app made to streamline and
-          simplify access to course evaluations at Boston College. I’ve also
-          been working as a TA at BC’s Computer Science Department for over a
-          year and have had the opportunity to co-found the Boston College
-          Linguistics Club, where I currently serve as president.
-        </p>
-        <p>
-          When I’m not programming, I like to spend my time playing guitar,
-          reading, and drinking coffee.
-        </p>
+    <section id="contact" className={styles.contact}>
+      <div className={styles.contactInner}>
+        <h2 className={styles.titleH2}>Contact</h2>
+        <div className={styles.contactContent}>
+          <div className={styles.contactTitle}>
+            <p>GitHub</p>
+            <p>LinkedIn</p>
+          </div>
+          <div className={styles.contactLinks}>
+            <a href="https://github.com/ljohr" target="_blank" rel="noreferrer">
+              git/ljohr
+            </a>
+            <a
+              href="https://www.linkedin.com/in/lillyohr/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              in/lillyohr
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
@@ -373,7 +374,7 @@ const Home = () => {
         <Hero />
         <Projects />
         <Skills />
-        <About />
+        <Contact />
         <Footer />
       </main>
     </main>

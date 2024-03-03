@@ -1,13 +1,8 @@
-.mainArea {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 40rem;
-}
-
 .hero {
-  display: flex;
-  padding-top: 2rem;
-  min-height: 23rem;
+  min-height: 34rem;
+  max-width: 54rem;
+  padding: 7rem 2rem;
+  margin: 0 auto;
 }
 
 .highlighter {
@@ -27,32 +22,19 @@
 }
 
 .projects {
-  /* background-color: var(--background-secondary); */
-}
-
-.about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background-color: var(--background-secondary);
-  padding: 6rem 2rem;
 }
 
-.contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 6rem 2rem;
+.projectsInner {
+  max-width: 54rem;
+  padding: 3rem 2rem;
+  margin: 0 auto;
 }
 
 .skills {
-  padding: 2rem;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  max-width: 54rem;
+  padding: 3rem 2rem;
+  margin: 0 auto;
 }
 
 .title {
@@ -69,11 +51,6 @@
   font-size: 2.2rem;
   margin-top: 0rem;
   line-height: 1;
-}
-
-#hero p {
-  font-size: 1.25rem;
-  line-height: 1.7rem;
 }
 
 .links {
@@ -95,13 +72,14 @@
 }
 
 .titleH2 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .iconsContainer {
   display: grid;
   grid-template-columns: repeat(auto-fill, 16%);
   padding-top: 0.3rem;
+  font-size: 0.9rem;
 }
 
 .skillsIcon {
@@ -115,6 +93,7 @@
 .skillsIcon img {
   max-height: 3.1rem;
   max-width: 3.1rem;
+  object-fit: cover;
 }
 
 .skillsGroup {
@@ -123,23 +102,39 @@
   gap: 2rem;
 }
 
+.skillsGroup h3 {
+  font-size: 1.15rem;
+}
+
 .projectsGroup {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding-top: 1rem;
+  padding-top: 0.9rem;
 }
 
 .projectsCard {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 46%);
-  gap: 4%;
-  padding: 2.2rem 3.5rem;
+  grid-template-columns: 1.23fr 1fr;
+  grid-gap: 1rem;
+  padding: 2.2rem 2.6rem;
   border-radius: 3rem;
-  border: 1px solid rgba(189, 189, 189, 0.48);
+  border: 1px solid rgba(200, 200, 200, 0.48);
   box-shadow: rgba(75, 75, 75, 0.1) 0 0 10px;
   min-height: 18rem;
   background-color: #ffffff;
+}
+
+.projectsCard:hover {
+  transform: scale(1.007);
+}
+
+.projectsCard h3 {
+  font-size: 1rem;
+}
+
+.projectsCard p {
+  font-size: 0.94rem;
 }
 
 .moreInfo {
@@ -165,13 +160,13 @@
 }
 
 .projectLangs ul li {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 600;
   margin: 0;
   list-style: none;
   border: 1px solid rgba(189, 189, 189, 0.48);
   border-radius: 4rem;
-  padding: 0.2rem 0.6rem;
+  padding: 0.2rem 0.5rem;
 }
 
 .projectHeader {
@@ -202,7 +197,7 @@
   align-items: center;
   color: #ffffff;
   background-color: #90c8fb;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   padding: 0.15rem 0.4rem;
   border-radius: 0.5rem;
 }
@@ -212,8 +207,30 @@
   cursor: pointer;
 }
 
-.about p {
-  font-size: 1.15rem;
+.contact {
+  background-color: var(--background-secondary);
+}
+
+.contactInner {
+  max-width: 54rem;
+  padding: 3rem 2rem;
+  margin: 0 auto;
+}
+
+.contactContent {
+  display: flex;
+  gap: 5rem;
+}
+
+.contactTitle,
+.contactLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactTitle p {
+  margin: 0;
+  margin-bottom: 0.18rem;
 }
 
 .top {
@@ -235,7 +252,7 @@
   z-index: 100;
 }
 
-/* @keyframes fadeInUp {
+@keyframes fadeInUp {
   0% {
     transform: translateY(3%);
     opacity: 0;
@@ -248,7 +265,7 @@
 
 .loadAnimation {
   animation: 1.5s fadeInUp;
-} */
+}
 
 @media screen and (max-width: 768px) {
   .imgCard {
@@ -274,17 +291,7 @@
 }
 
 @media screen and (max-width: 525px) {
-  .title {
-    font-size: 5rem;
-  }
-
   .projectHeader {
     flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .title {
-    font-size: 4rem;
   }
 }
