@@ -272,7 +272,7 @@ const Projects = () => {
               </p>
               <p className={styles.projectDesc}>
                 Currently being built in a team of four as part of research with
-                Professor Mira Yun.
+                Professor Mira Yun at Boston College.
               </p>
 
               <div className={styles.projectLangs}>

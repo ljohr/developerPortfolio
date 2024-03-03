@@ -61,17 +61,8 @@
   line-height: 3rem;
 }
 
-.nav-item a {
-  border-bottom: 3px solid #ffffff00;
-}
-
-.nav-item a:active {
-  border-bottom: 3px solid var(--primary-color);
-}
-
-.mobile-navbar ul a:hover {
-  color: var(--background);
-  border-bottom: 3px solid var(--background);
+li.nav-item {
+  font-weight: 600;
 }
 
 .hamburger {
