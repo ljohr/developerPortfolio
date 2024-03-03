@@ -3,7 +3,8 @@
   line-height: 1.5;
   font-weight: 400;
   /* --primary-color: #aaddff; */
-  --primary-color: #e4e4e4;
+  /* --primary-color: #e4e4e4; */
+  --primary-color: rgba(161, 227, 255, 0.667);
   --secondary-color: #0c9bfb;
   --background-primary: #fcfcfa;
   --background-secondary: rgb(250, 250, 250);

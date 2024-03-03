@@ -3,7 +3,7 @@
 import { FC, useState, MouseEvent } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import favicon from "../favicon.ico";
+import favicon from "../../assets/favicon.ico";
 import "./Navbar.css";
 
 const Navbar: FC = () => {

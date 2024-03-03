@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className={styles.footerMain}>
       <div className={styles.footerContainer}>
-        <p>Copyright &copy; Lilly Ohr 2023</p>
+        <p>Copyright &copy; Lilly Ohr 2024</p>
         <div className={styles.footerLinks}>
           <a href="https://github.com/ljohr" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faGithub} />

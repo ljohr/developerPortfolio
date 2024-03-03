@@ -1,13 +1,33 @@
+.mainArea {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40rem;
+}
+
 .hero {
   display: flex;
-  padding: 2rem;
-  min-height: 38rem;
-  margin-top: -1.5rem;
+  padding-top: 2rem;
+  min-height: 23rem;
+}
+
+.highlighter {
+  position: relative;
+  background-image: linear-gradient(
+    rgba(161, 227, 255, 0.667),
+    rgba(161, 227, 255, 0.667)
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 4px;
+  background-position: 0 100%;
+  transition: background-size 0.3s ease-in-out;
+}
+
+.highlighter:hover {
+  background-size: 100% 100%;
 }
 
 .projects {
-  padding: 2rem;
-  background-color: var(--background-secondary);
+  /* background-color: var(--background-secondary); */
 }
 
 .about {
@@ -32,14 +52,11 @@
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   width: 100%;
 }
 
 .title {
-  font-size: 6.4rem;
+  font-size: 2.2rem;
   font-weight: 800;
   margin: 0;
   position: relative;
@@ -47,65 +64,26 @@
   white-space: nowrap;
 }
 
-.title::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: rgb(135, 211, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: animate 4.2s ease-in-out infinite;
-}
-
-@keyframes animate {
-  0%,
-  100% {
-    clip-path: polygon(
-      0% 40%,
-      16% 39%,
-      33% 45%,
-      54% 55%,
-      70% 56%,
-      84% 54%,
-      100% 47%,
-      100% 110%,
-      0% 110%
-    );
-  }
-
-  50% {
-    clip-path: polygon(
-      0% 55%,
-      15% 60%,
-      34% 61%,
-      51% 57%,
-      67% 45%,
-      84% 40%,
-      100% 41%,
-      100% 110%,
-      0% 110%
-    );
-  }
-}
-
-#hero h3 {
-  margin-top: -0.4rem;
+.hero h3 {
+  color: rgb(39, 39, 39);
+  font-size: 2.2rem;
+  margin-top: 0rem;
+  line-height: 1;
 }
 
 #hero p {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
+  line-height: 1.7rem;
 }
 
 .links {
   display: flex;
-  justify-content: center;
-  font-size: 1.35rem;
+  padding-top: 0.2rem;
   gap: 0.4rem;
 }
 
 .faIcon {
-  min-height: 1.35rem;
+  min-height: 1.2rem;
 }
 
 .projectLinks .faSeedling {
@@ -117,7 +95,7 @@
 }
 
 .titleH2 {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .iconsContainer {
@@ -257,7 +235,7 @@
   z-index: 100;
 }
 
-@keyframes fadeInUp {
+/* @keyframes fadeInUp {
   0% {
     transform: translateY(3%);
     opacity: 0;
@@ -270,7 +248,7 @@
 
 .loadAnimation {
   animation: 1.5s fadeInUp;
-}
+} */
 
 @media screen and (max-width: 768px) {
   .imgCard {

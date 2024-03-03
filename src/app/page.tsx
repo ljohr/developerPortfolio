@@ -35,8 +35,21 @@ const Hero = () => {
         <h1 className={styles.title} data-text="Lilly Ohr">
           Lilly Ohr
         </h1>
-        <h3>Full Stack Developer Based in Boston</h3>
-        <div className={styles.links}>
+        <h3>Fullstack Developer Based in Boston</h3>
+        <p>
+          Hi I’m Lilly, a full stack developer studying{" "}
+          <span className={styles.highlighter}>
+            Computer Science and Linguistics at Boston College.
+          </span>{" "}
+          I’m passionate about developing engaging, accessible, and performant
+          applications applications. I’m currently working as a{" "}
+          <span className={styles.highlighter}>
+            software engineering research assistant
+          </span>{" "}
+          under Professor Mira Yun, developing a fullstack mentorship networking
+          application.
+        </p>
+        {/* <div className={styles.links}>
           <a href="https://github.com/ljohr" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faGithub} className={styles.faIcon} />
           </a>
@@ -47,7 +60,7 @@ const Hero = () => {
           >
             <FontAwesomeIcon icon={faLinkedin} className={styles.faIcon} />
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );
@@ -56,88 +69,76 @@ const Hero = () => {
 const Skills = () => {
   return (
     <section id="skills" className={styles.skills}>
-      <div className="container">
-        <h2 className={styles.titleH2}>Skills</h2>
-        <div className={styles.skillsGroup}>
-          <div>
-            <h3>Programming Languages</h3>
-            <div className={styles.iconsContainer}>
-              <div className={styles.skillsIcon}>
-                <Image src={htmlImg} alt="html" height={50} width={50} />
-                <p>HTML</p>
-              </div>
-              <div className={styles.skillsIcon}>
-                <Image src={cssImg} alt="css" height={50} width={50} />
-                <p>CSS</p>
-              </div>
-              <div className={styles.skillsIcon}>
-                <Image src={jsImg} alt="javascript" height={50} width={50} />
-                <p>JavaScript</p>
-              </div>
-              <div className={styles.skillsIcon}>
-                <Image src={pythonImg} alt="python" height={50} width={50} />
-                <p>Python</p>
-              </div>
-              <div className={styles.skillsIcon}>
-                <Image src={cImg} alt="c" height={50} width={50} />
-                <p>C</p>
-              </div>
-              <div className={styles.skillsIcon}>
-                <Image src={javaImg} alt="java" height={50} width={50} />
-                <p>Java</p>
-              </div>
+      <h2 className={styles.titleH2}>Skills</h2>
+      <div className={styles.skillsGroup}>
+        <div>
+          <h3>Programming Languages</h3>
+          <div className={styles.iconsContainer}>
+            <div className={styles.skillsIcon}>
+              <Image src={htmlImg} alt="html" height={50} width={50} />
+              <p>HTML</p>
+            </div>
+            <div className={styles.skillsIcon}>
+              <Image src={cssImg} alt="css" height={50} width={50} />
+              <p>CSS</p>
+            </div>
+            <div className={styles.skillsIcon}>
+              <Image src={jsImg} alt="javascript" height={50} width={50} />
+              <p>JavaScript</p>
+            </div>
+            <div className={styles.skillsIcon}>
+              <Image src={pythonImg} alt="python" height={50} width={50} />
+              <p>Python</p>
+            </div>
+            <div className={styles.skillsIcon}>
+              <Image src={cImg} alt="c" height={50} width={50} />
+              <p>C</p>
+            </div>
+            <div className={styles.skillsIcon}>
+              <Image src={javaImg} alt="java" height={50} width={50} />
+              <p>Java</p>
             </div>
           </div>
-          <div>
-            <h3>Technologies</h3>
-            <div className={styles.iconsContainer}>
-              <div className={styles.skillsIcon}>
-                <Image src={nodeImg} alt="node-js" height={50} width={50} />
-                <p>Node.js</p>
-              </div>
-              <div className={styles.skillsIcon}>
-                <Image src={mongodbImg} alt="mongodb" height={50} width={50} />
-                <p>MongoDB</p>
-              </div>
-              <div className={styles.skillsIcon}>
-                <Image src={mysqlImg} alt="mysql" height={50} width={50} />
-                <p>MySQL</p>
-              </div>
-              <div className={styles.skillsIcon}>
-                <Image src={gitImg} alt="git" height={50} width={50} />
-                <p>Git</p>
-              </div>
-              <div className={styles.skillsIcon}>
-                <Image
-                  src={firebaseImg}
-                  alt="firebase"
-                  height={50}
-                  width={50}
-                />
-                <p>Firebase</p>
-              </div>
-              <div className={styles.skillsIcon}>
-                <Image src={viteImg} alt="vite" height={50} width={50} />
-                <p>Vite</p>
-              </div>
+        </div>
+        <div>
+          <h3>Technologies</h3>
+          <div className={styles.iconsContainer}>
+            <div className={styles.skillsIcon}>
+              <Image src={nodeImg} alt="node-js" height={50} width={50} />
+              <p>Node.js</p>
+            </div>
+            <div className={styles.skillsIcon}>
+              <Image src={mongodbImg} alt="mongodb" height={50} width={50} />
+              <p>MongoDB</p>
+            </div>
+            <div className={styles.skillsIcon}>
+              <Image src={mysqlImg} alt="mysql" height={50} width={50} />
+              <p>MySQL</p>
+            </div>
+            <div className={styles.skillsIcon}>
+              <Image src={gitImg} alt="git" height={50} width={50} />
+              <p>Git</p>
+            </div>
+            <div className={styles.skillsIcon}>
+              <Image src={firebaseImg} alt="firebase" height={50} width={50} />
+              <p>Firebase</p>
+            </div>
+            <div className={styles.skillsIcon}>
+              <Image src={viteImg} alt="vite" height={50} width={50} />
+              <p>Vite</p>
             </div>
           </div>
-          <div>
-            <h3>Frameworks</h3>
-            <div className={styles.iconsContainer}>
-              <div className={styles.skillsIcon}>
-                <Image src={reactImg} alt="react" height={50} width={50} />
-                <p>React</p>
-              </div>
-              <div className={styles.skillsIcon}>
-                <Image
-                  src={expressImg}
-                  alt="express-js"
-                  height={50}
-                  width={50}
-                />
-                <p>Express.js</p>
-              </div>
+        </div>
+        <div>
+          <h3>Frameworks</h3>
+          <div className={styles.iconsContainer}>
+            <div className={styles.skillsIcon}>
+              <Image src={reactImg} alt="react" height={50} width={50} />
+              <p>React</p>
+            </div>
+            <div className={styles.skillsIcon}>
+              <Image src={expressImg} alt="express-js" height={50} width={50} />
+              <p>Express.js</p>
             </div>
           </div>
         </div>
@@ -364,18 +365,18 @@ const About = () => {
 
 const Home = () => {
   return (
-    <>
+    <main className={styles.mainArea}>
       <header>
         <Navbar />
       </header>
-      <main className={styles.loadAnimation}>
+      <main className={`${styles.loadAnimation} ${styles.mainContent}`}>
         <Hero />
         <Projects />
         <Skills />
         <About />
         <Footer />
       </main>
-    </>
+    </main>
   );
 };
 
