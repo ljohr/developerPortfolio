@@ -42,7 +42,7 @@ const Hero = () => {
             Computer Science and Linguistics at Boston College.
           </span>{" "}
           I’m passionate about developing engaging, accessible, and performant
-          applications applications. I’m currently working as a{" "}
+          applications. I’m currently working as a{" "}
           <span className={styles.highlighter}>
             software engineering research assistant
           </span>{" "}
