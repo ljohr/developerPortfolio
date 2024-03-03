@@ -25,8 +25,8 @@ import reactImg from "../assets/skills-img/react.svg";
 import expressImg from "../assets/skills-img/express.svg";
 
 import scopeapp from "../assets/projects/scope-app.png";
-import gradconnect from "../assets/projects/gradconnect.png";
 import eagleconnect from "../assets/projects/eagleconnect.png";
+import malloc from "../assets/projects/malloc.png";
 
 const Hero = () => {
   return (
@@ -49,18 +49,6 @@ const Hero = () => {
           under Professor Mira Yun, developing a fullstack mentorship networking
           application.
         </p>
-        {/* <div className={styles.links}>
-          <a href="https://github.com/ljohr" target="_blank" rel="noreferrer">
-            <FontAwesomeIcon icon={faGithub} className={styles.faIcon} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/lillyohr/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon icon={faLinkedin} className={styles.faIcon} />
-          </a>
-        </div> */}
       </div>
     </section>
   );
@@ -182,13 +170,11 @@ const Projects = () => {
                 </div>
               </div>
               <p className={styles.projectDesc}>
-                Scope was created to provide an accessible course evaluations
-                platform for Boston College students.
-              </p>
-              <p>
-                17,000 course reviews were scraped using a Python script. Users
-                can add, update, and delete their own reviews as they search for
-                existing courses that fit their needs.
+                An interactive course evaluation platform to find course reviews
+                for Boston College classes. Allows students to browse thousands
+                of reviews and add their own ratings to the database. Custom
+                search and filter lets users easily find the courses they are
+                looking for.
               </p>
               <div className={styles.projectLangs}>
                 <ul>
@@ -214,56 +200,38 @@ const Projects = () => {
           <div className={styles.projectsCard}>
             <div className={styles.projectInfo}>
               <div className={styles.projectHeader}>
-                <h3>Grad Connect</h3>
+                <h3>malloc</h3>
                 <div className={styles.projectLinks}>
                   <a
                     className={styles.projectSingleLink}
-                    href="https://github.com/fordesa/HackTheHeights"
+                    href="https://github.com/ljohr/malloc"
                     target="_blank"
                     rel="noreferrer"
                   >
                     Github{" "}
                     <FontAwesomeIcon icon={faGithub} className={styles.faGit} />
                   </a>
-                  <a
-                    className={styles.projectSingleLink}
-                    href="https://gradconnect.onrender.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    See Live
-                    <FontAwesomeIcon
-                      icon={faSeedling}
-                      className={styles.faSeedling}
-                    />
-                  </a>
                 </div>
               </div>
 
               <p className={styles.projectDesc}>
-                Grad Connect was created to connect low resource high school
-                students with undergraduate college students acting as mentors.
-              </p>
-              <p className={styles.moreInfo}>
-                Winner of the Grand Prize and Best Use of Auth0 Prize at the
-                2023 Boston College Hackathon.
+                A simplified version of malloc(), a C function that manages
+                dynamic memory allocation on the heap. The program utilizes a
+                singly-linked list to manage free memory efficiently. It uses
+                the underlying sbrk() function for dynamic memory allocation
+                from the heap
               </p>
               <div className={styles.projectLangs}>
                 <ul>
-                  <li>HTML / CSS</li>
-                  <li>React</li>
-                  <li>Node.js</li>
-                  <li>MongoDB</li>
-                  <li>Auth0</li>
-                  <li>Mongoose</li>
+                  <li>C</li>
                 </ul>
               </div>
             </div>
             <div className={styles.imgCard}>
               <Image
                 className={styles.projectImg}
-                src={gradconnect}
-                alt="Grad Connect"
+                src={malloc}
+                alt="malloc"
                 height={204}
                 width={374}
               />
@@ -298,17 +266,15 @@ const Projects = () => {
                 </div>
               </div>
               <p className={styles.projectDesc}>
-                Eagle Connect was created to connect undergraduate students at
-                Boston College with BC alumni. The platform allows mentors to
-                indicate what help they are willing to offer (general career,
-                resume review, interview help).
+                A social network that allows undergraduates to connect with
+                alumni mentors during the job application process. Features
+                personalized pages for students and mentors.
               </p>
-              <p>
-                The MVP is currently live, and V1 is under development with the
-                aim of being launched by March 2024. Developed by a team of 3,
-                we aim to make this platform the leading networking solution for
-                all BC students by the end of the year.
+              <p className={styles.projectDesc}>
+                Currently being built in a team of four as part of research with
+                Professor Mira Yun.
               </p>
+
               <div className={styles.projectLangs}>
                 <ul>
                   <li>HTML / CSS</li>
