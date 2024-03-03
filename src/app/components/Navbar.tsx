@@ -3,7 +3,7 @@
 import { FC, useState, MouseEvent } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import favicon from "../favicon.ico";
+import favicon from "../../assets/favicon.ico";
 import "./Navbar.css";
 
 const Navbar: FC = () => {
@@ -52,10 +52,10 @@ const Navbar: FC = () => {
         </li>
         <li className="nav-item">
           <Link
-            href="/#about"
+            href="/#contact"
             onClick={(e) => handleLinkClick(e, toggleMenu, isOpen)}
           >
-            <span className="link-text">About</span>
+            <span className="link-text">Contact</span>
           </Link>
         </li>
         {/* <li className="nav-item">
