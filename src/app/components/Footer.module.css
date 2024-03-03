@@ -22,5 +22,6 @@
 }
 
 .footerLinks a {
+  display: flex;
   width: 0.9rem;
 }

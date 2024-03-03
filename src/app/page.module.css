@@ -291,6 +291,10 @@
 }
 
 @media screen and (max-width: 525px) {
+  .hero {
+    padding: 3rem 2rem;
+  }
+
   .projectHeader {
     flex-direction: column;
   }
