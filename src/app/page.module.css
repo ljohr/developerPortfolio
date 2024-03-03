@@ -294,4 +294,13 @@
   .projectHeader {
     flex-direction: column;
   }
+
+  .title,
+  .hero h3 {
+    font-size: 1.8rem;
+  }
+
+  .contactContent {
+    gap: 1rem;
+  }
 }
