@@ -1,8 +1,7 @@
 # Developer Portfolio
 Welcome to the GitHub repository for my personal developer portfolio website! This site showcases my projects, skills, and professional journey as a software developer. 
 
-<img width="1054" alt="porfolioHome" src="https://github.com/ljohr/personalWebsite/assets/46297075/7082505c-b644-4695-a891-bdfe313eb4d8">
-
+<img width="1214" alt="porfolioHome" src="https://github.com/ljohr/developerPortfolio/assets/46297075/cbeb7bf5-2cba-4260-9dcc-84fd7bfc31a2">
 
 ## **Table of Contents**
 
