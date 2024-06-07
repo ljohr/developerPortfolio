@@ -33,21 +33,15 @@ const Hero = () => {
     <section className={styles.hero}>
       <div className={styles.heroInner}>
         <h1 className={styles.title} data-text="Lilly Ohr">
-          Lilly Ohr
+          Hi I’m Lilly Ohr.
         </h1>
-        <h3>Fullstack Developer Based in Boston</h3>
         <p>
-          Hi I’m Lilly, a full stack developer studying{" "}
-          <span className={styles.highlighter}>
-            Computer Science and Linguistics at Boston College.
-          </span>{" "}
-          I’m passionate about developing engaging, accessible, and performant
-          applications. I’m currently working as a{" "}
-          <span className={styles.highlighter}>
-            software engineering research assistant
-          </span>{" "}
-          under Professor Mira Yun, developing a fullstack mentorship networking
-          application.
+          I’m a junior software engineer that recently graduated with a
+          bachelors degree in Computer Science and Linguistics at Boston
+          College. I’m passionate about developing engaging, accessible, and
+          performant applications. I’m currently working as a software
+          engineering intern at Geaux Network where I work on full stack tasks
+          in mostly React and JavaScript.
         </p>
       </div>
     </section>
