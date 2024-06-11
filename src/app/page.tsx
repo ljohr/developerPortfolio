@@ -33,15 +33,17 @@ const Hero = () => {
     <section className={styles.hero}>
       <div className={styles.heroInner}>
         <h1 className={styles.title} data-text="Lilly Ohr">
-          Hi I’m Lilly Ohr.
+          Lilly Ohr
         </h1>
+        <h3 className={styles.role}>Software Engineer</h3>
         <p>
-          I’m a junior software engineer that recently graduated with a
-          bachelors degree in Computer Science and Linguistics at Boston
-          College. I’m passionate about developing engaging, accessible, and
-          performant applications. I’m currently working as a software
-          engineering intern at Geaux Network where I work on full stack tasks
-          in mostly React and JavaScript.
+          I’m a software engineer intern at Geaux Network where I work on full
+          stack tasks in mostly React and JavaScript. I recently graduated from
+          Boston College with a BS in Computer Science and BA Linguistics. I’m
+          passionate about developing engaging, accessible, and performant
+          applications. I am currently seeking a full time position, so please
+          reach out through LinkedIn or the contact form below to discuss any
+          opportunities
         </p>
       </div>
     </section>
