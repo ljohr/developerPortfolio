@@ -68,7 +68,7 @@ const Navbar: FC = () => {
         </li> */}
         <li className="nav-item">
           <Link
-            href="/#resume"
+            href="/lillyohr_resume.pdf"
             onClick={(e) => handleLinkClick(e, toggleMenu, isOpen)}
           >
             <span className="link-text">Resume</span>
