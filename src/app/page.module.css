@@ -4,6 +4,9 @@
   padding: 7rem 2rem;
   margin: 0 auto;
 }
+.heroText {
+  font-size: 1.05rem;
+}
 
 .highlighter {
   position: relative;
