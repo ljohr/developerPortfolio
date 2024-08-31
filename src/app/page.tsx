@@ -46,8 +46,8 @@ const Hero = () => {
           , where I contribute to the frontend and backend of an in-app shopping
           cart and checkout feature using React and Node.js. I recently
           graduated from Boston College with a BS in Computer Science and a BA
-          in Linguistics. I'm passionate about creating engaging, accessible,
-          and high-performance applications.
+          in Linguistics. I&apos;m passionate about creating engaging,
+          accessible, and high-performance applications.
         </p>
       </div>
     </section>
