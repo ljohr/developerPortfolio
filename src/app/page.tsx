@@ -27,6 +27,8 @@ import expressImg from "../assets/skills-img/express.svg";
 import scopeapp from "../assets/projects/scope-app.png";
 import eagleconnect from "../assets/projects/eagleconnect.png";
 import malloc from "../assets/projects/malloc.png";
+import cStyleChecker from "../assets/projects/c-style-checker.png";
+import musicGenerator from "../assets/projects/music-generator.png";
 
 const Hero = () => {
   return (
@@ -35,15 +37,14 @@ const Hero = () => {
         <h1 className={styles.title} data-text="Lilly Ohr">
           Lilly Ohr
         </h1>
-        <h3 className={styles.role}>Software Engineer</h3>
+        <h3 className={styles.role}>Software Engineer Based in Boston</h3>
         <p>
-          I’m a software engineer intern at Geaux Network where I work on full
-          stack tasks in mostly React and JavaScript. I recently graduated from
-          Boston College with a BS in Computer Science and BA Linguistics. I’m
-          passionate about developing engaging, accessible, and performant
-          applications. I am currently seeking a full time position, so please
-          reach out through LinkedIn or the contact form below to discuss any
-          opportunities
+          Hi, I’m Lilly Ohr, a Software Engineer Intern at Geaux Network, where
+          I work on both the frontend and backend of an in-app shopping cart and
+          checkout feature using React and Node.js. I recently graduated from
+          Boston College with a BS in Computer Science and a BA in Linguistics.
+          I'm passionate about creating engaging, accessible, and
+          high-performance applications.
         </p>
       </div>
     </section>
@@ -196,11 +197,11 @@ const Projects = () => {
           <div className={styles.projectsCard}>
             <div className={styles.projectInfo}>
               <div className={styles.projectHeader}>
-                <h3>malloc</h3>
+                <h3>C Style Checker</h3>
                 <div className={styles.projectLinks}>
                   <a
                     className={styles.projectSingleLink}
-                    href="https://github.com/ljohr/malloc"
+                    href="https://github.com/ljohr/c_style_checker"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -211,23 +212,22 @@ const Projects = () => {
               </div>
 
               <p className={styles.projectDesc}>
-                A simplified version of malloc(), a C function that manages
-                dynamic memory allocation on the heap. The program utilizes a
-                singly-linked list to manage free memory efficiently. It uses
-                the underlying sbrk() function for dynamic memory allocation
-                from the heap
+                A Python script created to reduce grading time as a TA for
+                Computer Systems. This script checks whether a C program
+                conforms to the style guidelines based on the Google C++ Style
+                Guide.
               </p>
               <div className={styles.projectLangs}>
                 <ul>
-                  <li>C</li>
+                  <li>Python</li>
                 </ul>
               </div>
             </div>
             <div className={styles.imgCard}>
               <Image
                 className={styles.projectImg}
-                src={malloc}
-                alt="malloc"
+                src={cStyleChecker}
+                alt="style-checker"
                 height={204}
                 width={374}
               />
@@ -266,10 +266,6 @@ const Projects = () => {
                 alumni mentors during the job application process. Features
                 personalized pages for students and mentors.
               </p>
-              <p className={styles.projectDesc}>
-                Currently being built in a team of four as part of research with
-                Professor Mira Yun at Boston College.
-              </p>
 
               <div className={styles.projectLangs}>
                 <ul>
@@ -287,6 +283,45 @@ const Projects = () => {
                 className={styles.projectImg}
                 src={eagleconnect}
                 alt="Eagle Connect"
+                height={204}
+                width={374}
+              />
+            </div>
+          </div>
+
+          <div className={styles.projectsCard}>
+            <div className={styles.projectInfo}>
+              <div className={styles.projectHeader}>
+                <h3>Markov Chain Music Generator</h3>
+                <div className={styles.projectLinks}>
+                  <a
+                    className={styles.projectSingleLink}
+                    href="https://github.com/ljohr/markov_chain_music_generator"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Github
+                    <FontAwesomeIcon icon={faGithub} className={styles.faGit} />
+                  </a>
+                </div>
+              </div>
+              <p className={styles.projectDesc}>
+                A program that generates classical piano pieces in the style of
+                Beethoven, Brahms, Chopin, Liszt, and Mendelssohn using three
+                Markov chains. Data on notes played, duration, and velocity of
+                the note played were used to create the three Markov chains.
+              </p>
+              <div className={styles.projectLangs}>
+                <ul>
+                  <li>Python</li>
+                </ul>
+              </div>
+            </div>
+            <div className={styles.imgCard}>
+              <Image
+                className={styles.projectImg}
+                src={musicGenerator}
+                alt="music-generator"
                 height={204}
                 width={374}
               />
