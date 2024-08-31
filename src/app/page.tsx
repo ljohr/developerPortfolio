@@ -35,7 +35,7 @@ const Hero = () => {
     <section className={styles.hero}>
       <div className={styles.heroInner}>
         <h1 className={styles.title} data-text="Lilly Ohr">
-          Hi, I'm Lilly Ohr.
+          Hi, I&apos;m Lilly Ohr.
         </h1>
         <p className={styles.heroText}>
           I currently work as a{" "}
@@ -43,11 +43,11 @@ const Hero = () => {
             {" "}
             Software Engineer Intern at Geaux Network
           </span>
-          , where I work on both the frontend and backend of an in-app shopping
+          , where I contribute to the frontend and backend of an in-app shopping
           cart and checkout feature using React and Node.js. I recently
           graduated from Boston College with a BS in Computer Science and a BA
-          in Linguistics. I&apos;m passionate about creating engaging,
-          accessible, and high-performance applications.
+          in Linguistics. I'm passionate about creating engaging, accessible,
+          and high-performance applications.
         </p>
       </div>
     </section>
